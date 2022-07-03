@@ -1,1 +1,0 @@
-#py file do get data
