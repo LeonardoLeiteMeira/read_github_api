@@ -1,16 +1,17 @@
 class GitHubSucessEntity {
+  String softwareName;
   int numberOfIssues;
   int totalOfContributors;
   int totalOfCommits;
-  get commitsPerContributor {
+  double get commitsPerContributor {
     return totalOfCommits / totalOfContributors;
   }
 
-  GitHubSucessEntity(
-      this.numberOfIssues, this.totalOfCommits, this.totalOfContributors);
+  GitHubSucessEntity(this.softwareName, this.numberOfIssues,
+      this.totalOfCommits, this.totalOfContributors);
 
   @override
   String toString() {
-    return "$numberOfIssues, $totalOfContributors, $totalOfCommits $commitsPerContributor\n";
+    return "$softwareName, $numberOfIssues, $totalOfContributors, $totalOfCommits, $commitsPerContributor\n";
   }
 }
