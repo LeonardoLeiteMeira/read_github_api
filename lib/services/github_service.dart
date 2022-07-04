@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'config/github_url_config.dart';
+import '../config/github_url_config.dart';
 
 class GithubService {
   final Dio _dio = Dio();
