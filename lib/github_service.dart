@@ -12,23 +12,32 @@ class GithubService {
       var issues = response.data["open_issues_count"];
       return issues;
     }
-    throw ("Error to get issues");
+    throw ("Error to get total of issues");
   }
 
   Future<int> getNumberOfContributors(String owner, String repo) async {
     var contributorsUrl = _gitHubUrlConfig.getContributorsUrl(owner, repo);
-    print(contributorsUrl);
     var response = await _dio.get(contributorsUrl);
 
     if (response.statusCode == 200) {
       var link = response.headers["link"];
-      return _getTotalOfContributorsInlinkHeader(link!.first);
+      return _getTotalOfPagesInLinkHeader(link!.first);
     }
 
-    throw ("Error to get Contributors");
+    throw ("Error to get total of Contributors");
   }
 
-  int _getTotalOfContributorsInlinkHeader(String link) {
+  Future<int> getNumberOfCommits(String owner, String repo) async {
+    var commitsUrl = _gitHubUrlConfig.getCommitsUrl(owner, repo);
+    var response = await _dio.get(commitsUrl);
+    if (response.statusCode == 200) {
+      var link = response.headers["link"];
+      return _getTotalOfPagesInLinkHeader(link!.first);
+    }
+    throw ("Error to get total of commits");
+  }
+
+  int _getTotalOfPagesInLinkHeader(String link) {
     var split1 = link.split(",")[1];
     var toFind = (split1.split("&page="))[1];
     var numberAsString = "";
