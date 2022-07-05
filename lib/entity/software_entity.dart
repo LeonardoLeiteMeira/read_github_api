@@ -7,6 +7,6 @@ class SoftwareEntity {
 
   @override
   String toString() {
-    return "$name, $owner, $repo\n";
+    return "$name,$owner,$repo\n";
   }
 }

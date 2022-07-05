@@ -12,6 +12,6 @@ class GitHubSucessEntity {
 
   @override
   String toString() {
-    return "$softwareName, $numberOfIssues, $totalOfContributors, $totalOfCommits, $commitsPerContributor\n";
+    return "$softwareName,$numberOfIssues,$totalOfContributors,$totalOfCommits,$commitsPerContributor\n";
   }
 }

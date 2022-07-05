@@ -8,9 +8,8 @@ class GithubSucsessMetrics {
 
   List<GitHubSucessEntity> githubSuccess = [];
 
-  void readSuccessMetrics() async {
-    var softwareList = await _fileService.getSoftwareList();
-    var successList = <GitHubSucessEntity>[];
+  Future<void> readSuccessMetrics() async {
+    var softwareList = await _fileService.getSoftwareListFromCSV();
 
     for (var software in softwareList) {
       var issues =
@@ -23,9 +22,11 @@ class GithubSucsessMetrics {
       var success =
           GitHubSucessEntity(software.name, issues, commits, contributors);
 
-      successList.add(success);
+      githubSuccess.add(success);
     }
   }
 
-  void saveSuccessMetricsAsCSV(List<GitHubSucessEntity> successMetrics) {}
+  void saveSuccessMetricsAsCSV() {
+    _fileService.writeListAsCSV("githubSuccessData", githubSuccess);
+  }
 }
