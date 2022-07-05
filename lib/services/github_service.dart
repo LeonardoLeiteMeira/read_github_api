@@ -1,9 +1,18 @@
 import 'package:dio/dio.dart';
+import 'package:read_github_api/config/env.dart';
 import '../config/github_url_config.dart';
 
 class GithubService {
   final Dio _dio = Dio();
   final GitHubUrlConfig _gitHubUrlConfig = GitHubUrlConfig();
+
+  GithubService() {
+    _dio.interceptors.add(InterceptorsWrapper(onRequest: ((options, handler) {
+      var githubPersonalToken = Env().gitHubPersonalToken;
+      options.headers.addAll({"Authorization": "Token $githubPersonalToken"});
+      return handler.next(options);
+    })));
+  }
 
   Future<int> getNumberOfIssues(String owner, String repo) async {
     var issuesUrl = _gitHubUrlConfig.getIssuesUrl(owner, repo);

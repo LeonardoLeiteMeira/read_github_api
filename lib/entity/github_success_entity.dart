@@ -4,7 +4,8 @@ class GitHubSucessEntity {
   int totalOfContributors;
   int totalOfCommits;
   double get commitsPerContributor {
-    return totalOfCommits / totalOfContributors;
+    var result = (totalOfCommits / totalOfContributors).toStringAsFixed(3);
+    return double.parse(result);
   }
 
   GitHubSucessEntity(this.softwareName, this.numberOfIssues,
