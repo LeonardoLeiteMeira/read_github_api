@@ -12,3 +12,5 @@ To see the limit you need to make a get requesto to https://api.github.com/rate_
 ## Dart Application
 A sample command-line application with an entrypoint in `bin/`, library code
 in `lib/`, and example unit test in `test/`.
+
+Run aplication with VS Code or `dart run ./bin/main.dart`

@@ -2,7 +2,7 @@ Software Name, Number Of Issues, Total Of Contributors, Total Of Commits, Commit
 Alluxio, 847, 1382, 33052, 23.916
 Antlr4, 732, 329, 8674, 26.365
 Arduino, 878, 301, 7373, 24.495
-Bazel, 2570, 936, 33032, 35.291
+Bazel, 2571, 936, 33032, 35.291
 Bisq, 231, 283, 16518, 58.367
 Buck, 219, 719, 22694, 31.563
 Cas, 1, 327, 21453, 65.606
@@ -12,7 +12,7 @@ Dropwizard, 28, 492, 6569, 13.352
 Druid, 1528, 555, 11832, 21.319
 Eclipse JDT Core, 1, 145, 25028, 172.607
 Eclipse PDE UI, 0, 18, 10528, 584.889
-Elasticsearch, 3929, 1896, 64926, 34.244
+Elasticsearch, 3930, 1896, 64926, 34.244
 Equinox Framework, 0, 95, 5258, 55.347
 Framework Bechmarks, 172, 226, 3605, 15.951
 Gocd, 55, 173, 14467, 83.624
@@ -27,7 +27,7 @@ Jmeter, 15, 90, 17743, 197.144
 Junit 5, 154, 198, 7287, 36.803
 K-9 Mail, 614, 308, 11054, 35.89
 Kafka, 1000, 1131, 10170, 8.992
-Language Tool, 1609, 201, 58015, 288.632
+Language Tool, 1611, 201, 58015, 288.632
 Lucene, 99, 366, 36053, 98.505
 Minecraft Forge, 179, 504, 8215, 16.3
 Neo4j, 253, 326, 73163, 224.426
@@ -40,7 +40,7 @@ Pinpoint, 331, 139, 12505, 89.964
 PMD, 625, 351, 19219, 54.755
 Realm Java, 404, 132, 8877, 67.25
 RxJava, 17, 323, 5989, 18.542
-Spring Boot, 590, 1124, 38630, 34.368
+Spring Boot, 589, 1124, 38631, 34.369
 Spring Framework, 1392, 760, 24535, 32.283
 Spring Security, 765, 618, 10377, 16.791
 Tomcat, 14, 120, 24274, 202.283
