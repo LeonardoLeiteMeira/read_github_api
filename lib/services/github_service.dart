@@ -21,6 +21,7 @@ class GithubService {
       var issues = response.data["open_issues_count"];
       return issues;
     }
+    print(response.data);
     throw ("Error to get total of issues");
   }
 

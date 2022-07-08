@@ -5,3 +5,43 @@ Arduino,arduino,Arduino
 Bazel,bazelbuild,bazel
 Bisq,bisq-network,bisq
 Buck,facebook,buck
+Cas,apereo,cas
+CoreNLP,stanfordnlp,CoreNLP
+Dbeaver,dbeaver,dbeaver
+Dropwizard,dropwizard,dropwizard
+Druid,apache,druid
+Eclipse JDT Core,eclipse,aspectj.eclipse.jdt.core
+Eclipse PDE UI,anjalshireesh,eclipse.pde.ui
+Elasticsearch,elastic,elasticsearch
+Equinox Framework,eclipse-equinox,equinox.framework
+Framework Bechmarks,the-benchmarker,web-frameworks
+Gocd,gocd,gocd
+Graylog,Graylog2,graylog2-server
+Guava,google,guava
+Hibernate ORM,hibernate,hibernate-orm
+J2objc,google,j2objc
+JabRef,JabRef,jabref
+Jenkins,jenkinsci,jenkins
+Jitsi,jitsi,jitsi-meet
+Jmeter,apache,jmeter
+Junit 5,junit-team,junit5
+K-9 Mail,thundernest,k-9
+Kafka,apache,kafka
+Language Tool,languagetool-org,languagetool
+Lucene,apache,lucene
+Minecraft Forge,MinecraftForge,MinecraftForge
+Neo4j,neo4j,neo4j
+Netty,netty,netty
+OpenRefine,OpenRefine,OpenRefine
+OrientDB,orientechnologies,orientdb
+Pentaho Kettle,pentaho,pentaho-kettle
+Pentaho Platform,pentaho,pentaho-platform
+Pinpoint,pinpoint-apm,pinpoint
+PMD,pmd,pmd
+Realm Java,realm,realm-java
+RxJava,ReactiveX,RxJava
+Spring Boot,spring-projects,spring-boot
+Spring Framework,spring-projects,spring-framework
+Spring Security,spring-projects,spring-security
+Tomcat,apache,tomcat
+Tutorials,eugenp,tutorials
