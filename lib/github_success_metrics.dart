@@ -27,6 +27,8 @@ class GithubSucsessMetrics {
   }
 
   void saveSuccessMetricsAsCSV() {
-    _fileService.writeListAsCSV("githubSuccessData", githubSuccess);
+    String header =
+        "Software Name,Number Of Issues,Total Of Contributors,Total Of Commits,Commits Per Contributor\n";
+    _fileService.writeListAsCSV("githubSuccessData", githubSuccess, header);
   }
 }

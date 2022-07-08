@@ -24,8 +24,9 @@ class FileService {
     return list;
   }
 
-  void writeListAsCSV(String fileName, List<GitHubSucessEntity> list) {
-    var listAsString = _writeListAsStringCSV(list);
+  void writeListAsCSV(
+      String fileName, List<GitHubSucessEntity> list, String headerCSV) {
+    var listAsString = headerCSV + _writeListAsStringCSV(list);
 
     var csvString = CsvToListConverter().convert(listAsString);
     var dir = p.join('lib', "csv", '$fileName.csv');
